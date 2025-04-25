@@ -1,0 +1,25 @@
+{
+  "name": "qr-code-image-generator",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Samueldamil/QR-Code-Image-Generator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Samueldamil/QR-Code-Image-Generator/issues"
+  },
+  "homepage": "https://github.com/Samueldamil/QR-Code-Image-Generator#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0",
+    "qrcode": "^1.5.4"
+  }
+}
