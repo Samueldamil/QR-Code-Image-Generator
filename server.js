@@ -37,17 +37,32 @@ app.post('/generate', async (req, res) => {
 	  text-align: center;
 	}
 
-	a {
+	.back {
 	  margin-bottom; 20px;
 	  text-decoration: none;
 	  color: #4CAF50;
 	  font-weight: bold;
 	}
+
+	button {
+	  padding: 10px 20px;
+	  font-size: 16px;
+	  background-color: #4CAF50;
+	  color: white;
+	  border: none;
+	  border-radius: 5px;
+	  cursor: pointer;
+	}
       </style>
-      <a href="/">Back</a>
+      <a class="back" href="/">Back</a>
       <h2>QR Code for ${link}</h2>
-      <img src="${qrImage}" alt="QR Code" />
-      </div>
+      <a href="${qrImage}" download="qr-code.png">
+        <img src="${qrImage}" alt="QR Code" />
+      </a>
+      <br>
+      <a href="${qrImage}" download="qr-code.png">
+        <button>Download QR Code</button>
+      </a>
       `);
    } catch (err) {
      res.send("Error generating QR Code.");
